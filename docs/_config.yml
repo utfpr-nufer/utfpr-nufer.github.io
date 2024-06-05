@@ -1,0 +1,6 @@
+domain: utfpr-nufer.github.io
+url: https://utfpr-nufer.github.io
+baseurl: /docs/
+remote_theme: pages-themes/tactile@v0.2.0
+plugins:
+- jekyll-remote-theme
