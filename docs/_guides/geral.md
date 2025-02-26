@@ -9,7 +9,6 @@ layout: post
 Esta página descreve padrões de desenvolvimento que são seguidos pelo time de desenvolvimento do grupo NUFER. Tais padrões refere-se ao ciclo de desenvolvimento em geral, e não como você deve programar na linguagem de programação C++. A ideia é reforçar a aplicação e a prática dessas ideias ao longo da estadia do desenvolvedor no grupo, com o intuito de evitar tais erros no futuro.
 
 > ##### LEMBRANDO
-> 
 > Esta pagina deve ser revisitado várias vezes pelo desenvolvedor, pois NINGUEM deve DECORAR todas essas regrinhas. É mais para guiar, e não servir como um artefato religioso.
 {: .block-tip }
 
