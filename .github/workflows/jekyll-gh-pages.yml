@@ -9,7 +9,7 @@ name: Deploy Jekyll site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: [$default-branch]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -40,7 +40,7 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
           cache-version: 0
-          working-directory: '.'
+          working-directory: './docs'
 
       - name: Cache dependencies
         uses: actions/cache@v3
@@ -53,6 +53,9 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
+      - name: List current directory
+        run: ls -la
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --source ./docs --destination ./_site
