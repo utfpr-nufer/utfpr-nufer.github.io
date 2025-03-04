@@ -8,6 +8,6 @@ gem 'jekyll-feed'
 gem 'jekyll-readme-index'
 gem 'jemoji'
 gem 'webrick'
-gem 'google-protobuf', force_ruby_platform: true if RUBY_PLATFORM.include?('linux-musl')
+gem 'google-protobuf', force_ruby_platform: true
 
 # gem "rails"
