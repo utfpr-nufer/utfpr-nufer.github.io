@@ -43,7 +43,7 @@ jobs:
           working-directory: './docs' # Specify the directory containing the Gemfile
 
       - name: Cache dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v2
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
@@ -55,7 +55,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --source ./docs --destination ./_site
         env:
           JEKYLL_ENV: production
 
